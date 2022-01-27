@@ -1,0 +1,228 @@
+:root {
+--background-color: #3b424a;
+--section-background: #2d343c;
+--collor-pri: #f5bf18;
+--collor-sub: #9ca4a1;
+--font: "Nunito", sans-serif;
+--font-size: 37px;
+}
+
+a:link {
+    color:var(--collor-pri);
+    text-decoration: none;
+}
+
+a:visited {
+    color: #cfa116;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #cfa116;
+    text-decoration: none;
+}
+
+body {
+    background-color: var(--background-color);
+    font-family: var(--font);
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: var(--font-size);
+    font-weight: bolder;
+}
+
+header {
+    width: 100vw;
+    height: 50px;
+    background-color: var(--section-background);
+    display: flex;
+    margin: auto;
+    margin-top: -5px;
+    border-radius: 9px;
+    box-shadow: 5px 4px 20px 1px rgba(0, 0, 0, 0.7);
+    transition: 0.7s;
+    min-width: 480px;
+}
+
+
+/* Nessa sessão encontra-se tags dentro do header
+    On this section, you'll find tags inside of the header */
+
+#Logo {
+    text-align: left;
+
+}
+
+#LightMode {
+    text-align: right;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;  
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider::before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s; 
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:focus + .slider::before {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+.slider.round::before {
+    border-radius: 50%;
+}
+
+/* Fim de tags do header */
+
+/* tudo abaixo vai no centro da tela */
+section {
+    width: 480px;
+    height: 600px;
+    background-color: var(--section-background);
+    display: flex;
+    margin: auto;
+    margin-top: 30px;
+    border-radius: 9px;
+    box-shadow: 5px 4px 20px 1px rgba(0, 0, 0, 0.7);
+    transition: 0.7s;
+}
+
+section:hover {
+    transition: 0.7s;
+    box-shadow: 5px 4px 20px 5px rgba(0, 0, 0, 0.7);
+}
+
+.boxes {
+    width: 300px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: rgba(148, 144, 144, 0.5);
+}
+
+.boxes:hover {
+    background-color: rgba(168, 164, 164, 0.5)
+}
+
+#doLogin {
+    color: var(--collor-sub);
+}
+
+#login-form {
+    margin-top: 30px;
+    margin-left: 85px;
+    margin-right: 900px;
+    font-family: var(--font);
+
+}
+
+#inpt-txt {
+    text-align: left;
+    color: #fff;
+}
+
+#inpt-pass {
+    margin-top: 13px;
+}
+
+#btn-login {
+    width: 308px;
+    height: 45px;
+    border-radius: 5px;  
+    margin-top: 40px;
+    border: none;
+    background-color: var(--collor-pri);
+    font-weight: bolder;
+}
+
+#btn-login:hover {
+    background-color: #cfa116;
+    cursor: pointer;
+}
+
+#remember-menu {
+    margin-top: 10px;
+}
+
+#remember-pass {
+    color: var(--collor-sub);
+    font-size: 13px;
+}
+
+#help {
+    margin-left: 50px;
+    font-size: 13px;
+}
+
+#btn-create {
+    width: 308px;
+    height: 45px;
+    border-radius: 5px;  
+    margin-top: 40px;
+    border: none;
+    background-color: var(--collor-pri);
+    font-weight: bolder;
+}
+
+/* fim do meio da página */
+
+footer {
+    height: 207px;
+    width: 100vw;
+    margin-top: 30px;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: var(--collor-sub);
+    box-shadow: 100px 2px 100px 100px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#botao-invisivel {
+    display:none;
+}
